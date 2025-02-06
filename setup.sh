@@ -6,7 +6,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/conda-archive-keyring.gpg] h
 
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/conda-archive-keyring.gpg] https://repo.anaconda.com/pkgs/misc/debrepo/conda stable main" | sudo tee -a /etc/apt/sources.list.d/conda.list
 
-sudo apt update
+sudo apt update -y
 sudo apt install conda -y
 
 source /opt/conda/etc/profile.d/conda.sh
