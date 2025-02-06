@@ -1,3 +1,5 @@
+sudo apt-get install -y gpg
+
 curl https://repo.anaconda.com/pkgs/misc/gpgkeys/anaconda.asc | gpg --dearmor > conda.gpg
 install -o root -g root -m 644 conda.gpg /usr/share/keyrings/conda-archive-keyring.gpg
 
